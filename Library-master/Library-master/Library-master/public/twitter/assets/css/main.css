@@ -1,0 +1,297 @@
+@import url("https://use.fontawesome.com/releases/v5.1.1/css/all.css");
+nav {
+  -webkit-box-shadow: 0 0 5px 0 #0004;
+          box-shadow: 0 0 5px 0 #0004;
+}
+
+nav.navbar {
+  background: #fff;
+}
+
+nav a {
+  color: #03A9F4;
+}
+
+nav a:hover {
+  color: #0092d4;
+}
+
+nav .navbar-brand {
+  width: 160px;
+  vertical-align: middle;
+}
+
+nav .navbar-brand #logo {
+  max-width: 50px;
+  max-height: 35px;
+  vertical-align: middle;
+}
+
+nav .navbar-brand #brand-name {
+  vertical-align: middle;
+}
+
+nav .search-bar {
+  -webkit-box-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  position: relative;
+}
+
+nav .search-bar .form-control {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+nav .search-bar .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn {
+  border-radius: 50px;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #03A9F4;
+  border-color: #03A9F4;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0092d4;
+  border-color: #0092d4;
+  outline: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #0092d4;
+  border-color: #0092d4;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+.wrapper {
+  min-height: 88vh;
+}
+
+.wrapper .panel {
+  background: #fff;
+  -webkit-box-shadow: 0 2px 7px -1px #0003;
+          box-shadow: 0 2px 7px -1px #0003;
+  border-radius: 2px;
+}
+
+.wrapper .panel .title {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.wrapper .panel .title h6 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.wrapper .profile p {
+  font-size: 14px;
+}
+
+.wrapper .profile .userImage {
+  width: 100%;
+  max-width: 125px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+  -webkit-box-shadow: 0 0 5px 0px #0004;
+          box-shadow: 0 0 5px 0px #0004;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* coustimuz */
+.btn-outline-primary {
+  color: #03A9F4;
+  background-color: transparent;
+  background-image: none;
+  border-color: #03A9F4;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #0092d4;
+  border-color: #0092d4;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #03A9F4;
+  border-color: #03A9F4;
+}
+
+/* ############### */
+.rounded-2 {
+  border-radius: 2px;
+}
+
+.createPost textarea {
+  resize: none;
+}
+
+.createPost textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.205);
+  font-size: 1em;
+}
+
+.createPost textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.205);
+  font-size: 1em;
+}
+
+.createPost textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.205);
+  font-size: 1em;
+}
+
+.createPost textarea::placeholder {
+  color: rgba(0, 0, 0, 0.205);
+  font-size: 1em;
+}
+
+.createPost .cameraBtn {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.createPost .btn-dispatch {
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+
+.post .userImage {
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  display: inline-block;
+}
+
+.post .fullname {
+  display: inline-block;
+  line-height: 2;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.post .btn-menu {
+  background: transparent;
+}
+
+.post .dropdown-toggle {
+  background: transparent;
+}
+
+.post .dropdown-toggle::after {
+  margin-left: 0em;
+  border-top: .3em solid #9E9E9E;
+}
+
+.post .dropdown-item {
+  font-size: 14px;
+}
+
+.post .postBody {
+  font-size: 14px;
+}
+
+.post .postImage {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 250px;
+  min-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.followers ul li {
+  margin-bottom: 12px;
+}
+
+.followers ul li .userImage {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.followers ul li .content {
+  vertical-align: middle;
+}
+
+.followers h6 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  nav .search-bar .search-btn {
+    top: 0px;
+    padding: 5px 12px;
+    height: calc(2.25rem + 2px);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  nav .search-bar .search-btn {
+    top: -8px;
+    padding: 5px 12px;
+    height: calc(2.25rem + 2px);
+  }
+}
+/*# sourceMappingURL=main.css.map */

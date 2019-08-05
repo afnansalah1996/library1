@@ -1,0 +1,266 @@
+
+@import url('https://use.fontawesome.com/releases/v5.1.1/css/all.css');
+
+$primary-color:#03A9F4;
+$primary-hover-color:#0092d4;
+$rounded: 2px;
+
+
+nav{
+    // background: #000;
+    box-shadow: 0 0 5px 0 #0004;
+    &.navbar{
+        background: #fff;
+    }
+    a {
+        color: $primary-color;
+        &:hover {
+            color: $primary-hover-color;
+        }
+    }
+
+    .navbar-brand{
+        width: 160px;
+        vertical-align: middle;
+        #logo{
+            max-width: 50px;
+            max-height: 35px;
+            vertical-align: middle;
+        }
+        #brand-name{
+            vertical-align: middle;
+        }
+    }
+    .search-bar{
+        flex: .6;
+        position: relative;
+        .form-control{
+            flex:1;
+        }
+        .search-btn{
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom:0;
+        }
+    }
+    // .dropdown-menu{
+    //     left: auto;
+    //     right: 0;
+    // }
+}
+.form-control{
+    border-radius: 50px;
+    
+    &:focus {
+        box-shadow: none;  
+    }
+}
+.btn{
+    border-radius: 50px;
+    &:focus {
+        box-shadow: none;  
+    }
+}
+.btn-outline-primary.focus,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+        color: #fff;
+        background-color: $primary-hover-color;
+        border-color: $primary-hover-color;
+        outline: none;
+    }
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $primary-hover-color;
+    border-color: $primary-hover-color;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+body{
+    background: #f7f7f7;
+}
+
+
+.wrapper{
+    min-height: 88vh;
+    .panel{
+        background: #fff;
+        box-shadow: 0 2px 7px -1px #0003;
+        border-radius:  $rounded;
+        .title{
+            width: 100%;
+            background: #f1f1f1;  
+            border-radius: $rounded $rounded 0px 0px;
+            h6{
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .profile{
+        p{
+            font-size: 14px;
+        }
+        .userImage{
+            width: 100%;
+            max-width: 125px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px;
+            box-shadow: 0 0 5px 0px #0004;
+            user-select: none;
+        }
+    }
+} 
+
+/* coustimuz */
+
+.btn-outline-primary {
+    color: $primary-color;
+    background-color: transparent;
+    background-image: none;
+    border-color: $primary-color;
+    
+    &:hover {
+        color: #fff;
+        background-color: $primary-hover-color;
+        border-color: $primary-hover-color;
+    }
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+/* ############### */
+
+.rounded-2{
+    border-radius: $rounded;
+}
+
+.createPost{
+    .form-group {
+        // margin-bottom: 0rem;
+    }
+    textarea{
+        resize: none;
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.205);
+            font-size: 1em;
+        }
+    }
+    .cameraBtn{
+        margin: 0;
+        padding: 5px 10px;
+    }
+    .btn-dispatch{
+        font-size: 12px;
+        font-weight: 600;
+        vertical-align: middle;
+        margin-top: 2px;
+    }
+}
+
+.post{
+    .userImage{
+        $size: 50px;
+        max-width: $size;
+        min-width: $size;
+        max-height: $size;
+        min-height: $size;
+
+        display: inline-block;
+    }
+    .fullname{
+        display: inline-block;
+        line-height: 2;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .btn-menu{
+        background: transparent;
+    }
+    .dropdown-toggle {
+        background: transparent;
+        &::after {
+            margin-left: 0em;
+            border-top: .3em solid #9E9E9E;
+
+        }
+    }
+    .dropdown-item{
+        font-size: 14px;
+    }
+    .postBody{
+        font-size: 14px;
+    }
+    .postImage{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 250px;
+        min-height: 150px;
+        object-fit: cover;
+    }
+    
+}
+.followers{
+    ul{
+        li{ 
+            margin-bottom: 12px;
+            .userImage{
+                width: 40px;
+                height: 40px;
+                vertical-align: middle;
+            }
+            .content{
+                vertical-align: middle;
+                
+            }
+        }
+    }
+    h6{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    nav .search-bar .search-btn {
+        top: 0px;
+        padding: 5px 12px;
+        height: calc(2.25rem + 2px); 
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav .search-bar .search-btn {
+        top: -8px;
+        padding: 5px 12px;
+        height: calc(2.25rem + 2px); 
+    }
+}
